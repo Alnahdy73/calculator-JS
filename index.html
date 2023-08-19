@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<script>
+function dharb(x){
+  document.getElementById('input1').value+=x;
+}
+function gsma(x){
+  document.getElementById('input1').value+=x;
+}
+function tareh(x){
+  document.getElementById('input1').value+=x;
+}
+function sum(x){
+  document.getElementById('input1').value+=x;
+}
+function delet1() {
+  let inputElement = document.getElementById("input1");
+  let inputValue = inputElement.value;
+  if (inputValue !== "") {
+    let updatedValue = inputValue.substring(0, inputValue.length - 1);
+    inputElement.value = updatedValue;
+  }
+}
+function clear1() {
+  document.getElementById('input1').value="";
+  document.getElementById('input2').value="";
+
+}
+function btn(x){
+  document.getElementById('input1').value+=x;
+}
+
+ 
+function resulte(){
+  if(document.getElementById('input1').value==""){
+    document.getElementById('input1').value="";
+  }
+  else{
+    e=document.getElementById('input1').value
+    document.getElementById('input2').value=eval(e)
+  }
+}
+
+
+</script>
+<body >
+  
+    <div class="mx-auto w-[393px] h-[830px] p-2.5 bg-slate-200 rounded-[44px] flex-col justify-start items-center gap-[65px] ">
+  <div class="w-[373px] h-[348px] relative bg-white rounded-[44px] border border-black mb-10">
+    <input id="input1"  class="left-[50px] top-[129px] absolute text-center text-black text-2xl font-normal">
+    <input id="input2"  class="left-[50px] top-[180px] absolute text-center text-black text-2xl font-normal">
+  </div>
+  <div class="flex-col justify-start items-center gap-2.5 flex">
+    <div class="justify-center items-center gap-5 inline-flex">
+      <div class="flex-col justify-start items-center gap-2.5 inline-flex">
+        <div class="w-[226px] justify-center items-center gap-5 inline-flex">
+          <div class="w-[62px] h-[62px] px-1 py-1.5 bg-slate-400 rounded-2xl shadow-inner flex-col justify-center items-center gap-2.5 inline-flex">
+            <button onclick="clear1()"class="w-[42px] text-center text-black text-2xl font-medium">AC</button>
+          </div>
+          <div class="w-[62px] h-[62px] px-1 py-1.5 bg-slate-400 rounded-2xl shadow-inner flex-col justify-center items-center gap-2.5 inline-flex">
+            <button id="delet12" onclick="delet1()"class="w-[42px] text-center text-black text-2xl font-medium">DEL</button>
+          </div>
+          <div class="w-[62px] h-[62px] relative">
+            <div class="w-[62px] h-[62px] left-0 top-0 absolute bg-slate-400 rounded-xl"></div>
+            <button onclick="gsma('/')" class="left-[25px] top-[13px] absolute text-center text-black text-2xl font-medium">/</button>
+          </div>
+        </div>
+        <div class="justify-center items-center gap-5 inline-flex">
+          <div class="w-[62px] px-1 py-1.5 bg-slate-400 rounded-xl shadow-inner flex-col justify-center items-center gap-2.5 inline-flex">
+            <button onclick="btn('7')" class="text-center text-black text-[32px] font-medium">7</divbutton>
+          </div>
+          <div class="w-[62px] px-1 py-1.5 bg-slate-400 rounded-2xl shadow-inner flex-col justify-center items-center gap-2.5 inline-flex">
+            <button onclick="btn('8')" class="text-center text-black text-[32px] font-medium">8</button>
+          </div>
+          <div class="w-[62px] px-1 py-1.5 bg-slate-400 rounded-2xl shadow-inner flex-col justify-center items-center gap-2.5 inline-flex">
+            <button onclick="btn('9')" class="text-center text-black text-[32px] font-medium">9</button>
+          </div>
+        </div>
+        <div class="justify-center items-center gap-5 inline-flex">
+          <div class="w-[62px] h-[62px] bg-slate-400 rounded-2xl shadow-inner flex-col justify-center items-center gap-2.5 inline-flex">
+            <button onclick="btn('4')" class="text-center text-black text-[32px] font-medium">4</button>
+          </div>
+          <div class="w-[62px] h-[62px] bg-slate-400 rounded-2xl shadow-inner flex-col justify-center items-center gap-2.5 inline-flex">
+            <button  onclick="btn('5')"class="text-center text-black text-[32px] font-medium">5</button>
+          </div>
+          <div class="w-[62px] h-[62px] bg-slate-400 rounded-2xl shadow-inner flex-col justify-center items-center gap-2.5 inline-flex">
+            <button  onclick="btn('6')"class="text-center text-black text-[32px] font-medium">6</button>
+          </div>
+        </div>
+        <div class="justify-center items-center gap-5 inline-flex">
+          <div class="w-[62px] h-[62px] px-1 py-1.5 bg-slate-400 rounded-2xl shadow-inner flex-col justify-center items-center gap-2.5 inline-flex">
+            <button onclick="btn('1')" class="text-center text-black text-[32px] font-medium">1</button>
+          </div>
+          <div class="w-[62px] h-[62px] px-1 py-1.5 bg-slate-400 rounded-2xl shadow-inner flex-col justify-center items-center gap-2.5 inline-flex">
+            <button onclick="btn('2')" class="text-center text-black text-[32px] font-medium">2</button>
+          </div>
+          <div class="w-[62px] h-[62px] px-1 py-1.5 bg-slate-400 rounded-2xl shadow-inner flex-col justify-center items-center gap-2.5 inline-flex">
+            <button onclick="btn('3')" class="text-center text-black text-[32px] font-medium">3</button>
+          </div>
+        </div>
+      </div>
+      <div class="self-stretch flex-col justify-center items-center gap-2.5 inline-flex">
+        <div class="w-[62px] h-[62px] relative">
+          <div class="w-[62px] h-[62px] left-0 top-0 absolute bg-slate-400 rounded-xl"></div>
+          <button onclick="dharb('*')" class="left-[23px] top-[7px] absolute text-center text-black text-[32px] font-medium">x</button>
+        </div>
+        <div class="w-[63px] h-[62px] relative">
+          <div class="w-[62px] h-[62px] left-[0.50px] top-0 absolute bg-slate-400 rounded-xl"></div>
+          <button onclick="tareh('-')" class="left-[20px] top-[7px] absolute text-center text-black text-[32px] font-medium">-</button>
+        </div>
+        <div class="w-[62px] h-[130px] px-1 bg-slate-400 rounded-xl shadow-inner flex-col justify-center items-center gap-2.5 flex">
+          <button onclick="sum('+')" class="w-[23px] text-center text-black text-[32px] font-medium">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="justify-center items-start gap-5 inline-flex">
+      <div class="w-36 h-[62px] px-1 py-1.5 bg-slate-400 rounded-2xl shadow-inner flex-col justify-center items-center gap-2.5 inline-flex">
+        <button onclick="btn('0')" class="text-center text-black text-[32px] font-medium">0</button>
+      </div>
+      <div class="w-[62px] h-[62px] px-1 py-1.5 bg-slate-400 rounded-2xl shadow-inner flex-col justify-center items-center gap-2.5 inline-flex">
+        <button onclick="btn('.')" class="text-center text-black text-[32px] font-medium">.</button>
+      </div>
+      <div class="w-[62px] h-[62px] relative bg-slate-400 rounded-2xl shadow-inner">
+        <button onclick="resulte('=')" class="w-[25px] h-[39px] left-[18.50px] top-[7px] absolute text-center text-black text-[32px] font-medium">=</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
